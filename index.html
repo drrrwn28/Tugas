@@ -110,8 +110,9 @@
 
         .name {
             font-size: 28px;
-            margin-top: 30px;
-            margin-left: 30px;
+            position: absolute;
+            margin-top: -42px;
+            margin-left: 120px;
         }
 
         .card p {
@@ -130,6 +131,7 @@
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
             color: #ffffff;
             transition: all 0.1s ease;
+            margin-top: 50px;
         }
 
         button:hover {
@@ -161,14 +163,14 @@
         }
 
         /*hal1*/
-        .project1 {
+        .project2 {
             position: absolute;
             margin-top: -430px;
             margin-left: 350px;
             transition: all 0.5s ease;
         }
 
-        .project1:hover {
+        .project2:hover {
             transform: scale(1.04) translateY(-4px);
         }
 
@@ -261,14 +263,14 @@
         }
 
         /*hal2*/
-        .project2 {
+        .project3 {
             position: absolute;
             margin-left: 350px;
             margin-top: -220px;
             transition: all 0.5s ease;
         }
 
-        .project2:hover {
+        .project3:hover {
             transform: scale(1.04) translateY(-4px);
         }
 
@@ -315,23 +317,84 @@
             margin-top: 30px;
             background: none;
         }
+
+        /*tolltip*/
+
+        .tolltip3 {
+            display: none;
+            background: linear-gradient(320deg, #000, #7d7a7a);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            margin-top: -270px;
+            margin-left: 350px;
+            width: 105px;
+            transition: all 1s ease;
+        }
+
+        .project3:hover .tolltip3 {
+            display: block;
+        }
+
+        .project1:hover .tolltip1 {
+            display: block;
+        }
+
+        .tolltip1 {
+            display: none;
+            background: linear-gradient(320deg, #000, #7d7a7a);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            margin-top: -510px;
+            margin-left: 180px;
+            width: 105px;
+            transition: all 1s ease;
+        }
+
+
+        .project2:hover .tolltip2 {
+            display: block;
+        }
+
+        .tolltip2 {
+            display: none;
+            background: linear-gradient(320deg, #000, #7d7a7a);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            margin-top: -240px;
+            margin-left: 350px;
+            width: 105px;
+            transition: all 1s ease;
+        }
     </style>
 
 </head>
 
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Latihan 1</a></li>
+            <li><a href="#">Latihan 2</a></li>
+            <li><a href="#">latihan 3</a></li>
+        </ul>
+    </nav>
+
+
     <div class="content">
 
-        <nav>
-            <ul>
-                <li><a href="#">Latihan 1</a></li>
-                <li><a href="#">Latihan 2</a></li>
-                <li><a href="#">latihan 3</a></li>
-            </ul>
-        </nav>
-
-
-        <div class="content">
+        <div class="project1">
             <div class="card">
                 <div class="bg-profil">
                     <video autoplay muted loop playsinline>
@@ -343,68 +406,76 @@
                 </div>
 
                 <div class="id">
-                    <p class="name">Indrawan Sanjaya</p>
+                    <h4 class="name">Indrawan</h4>
                     <p>SMK INOVASI MANDIRI</p>
                     <p>IX RPL 2</p>
                 </div>
                 <div class="tombol">
-                    <button>Call Me</button>
+                    <button onclick="alert('Nomor Tidak Dapat Dihubungi')">Call Me</button>
                 </div>
             </div>
+            <span class="tolltip1">ini project 2</span>
 
-            <div class="project1">
-                <div class="card1">
-                    <div class="top-card">
-                        <h2>CSS Style</h2>
-                        <ul class="rgb">
-                            <li class="green">oo</li>
-                            <li class="yellow">oo</li>
-                            <li class="red">oo</li>
-                        </ul>
-                    </div>
-                    <h1>Belajar CSS</h1>
-                    <p class="satu">Saya sedang belajar CSS Internal.</p>
-                    <p class="dua">CSS membuat website lebih menarik.</p>
-                </div>
-            </div>
-
-            <div class="project2">
-                <div class="card2">
-                    <div class="top-card">
-                        <h2>Jadwal Pelajaran</h2>
-                        <ul class="rgb">
-                            <li class="green">oo</li>
-                            <li class="yellow">oo</li>
-                            <li class="red">oo</li>
-                        </ul>
-                    </div>
-                    <div class="isi">
-                        <table>
-                            <tr>
-                                <th>Hari</th>
-                                <th>Mata Pelajaran</th>
-                                <th>Jam</th>
-                            </tr>
-                            <tr>
-                                <td>Senin</td>
-                                <td>Pemrograman Web</td>
-                                <td>07.00 - 09.30</td>
-                            </tr>
-                            <tr>
-                                <td>Selasa</td>
-                                <td>Basis Data</td>
-                                <td>07.00 - 09.30</td>
-                            </tr>
-                            <tr>
-                                <td>Rabu</td>
-                                <td>Pemrograman Dasar</td>
-                                <td>07.00 - 09.30</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
         </div>
+
+        <div class="project2">
+            <div class="card1">
+                <div class="top-card">
+                    <h2>CSS Style</h2>
+                    <ul class="rgb">
+                        <li class="green">oo</li>
+                        <li class="yellow">oo</li>
+                        <li class="red">oo</li>
+                    </ul>
+                </div>
+                <h1>Belajar CSS</h1>
+                <p class="satu">Saya sedang belajar CSS Internal.</p>
+                <p class="dua">CSS membuat website lebih menarik.</p>
+            </div>
+            <span class="tolltip2">ini project 1</span>
+
+        </div>
+
+        <div class="project3">
+            <div class="card2">
+                <div class="top-card">
+                    <h2>Jadwal Pelajaran</h2>
+                    <ul class="rgb">
+                        <li class="green">oo</li>
+                        <li class="yellow">oo</li>
+                        <li class="red">oo</li>
+                    </ul>
+                </div>
+                <div class="isi">
+                    <table>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Mata Pelajaran</th>
+                            <th>Jam</th>
+                        </tr>
+                        <tr>
+                            <td>Senin</td>
+                            <td>Pemrograman Web</td>
+                            <td>07.00 - 09.30</td>
+                        </tr>
+                        <tr>
+                            <td>Selasa</td>
+                            <td>Basis Data</td>
+                            <td>07.00 - 09.30</td>
+                        </tr>
+                        <tr>
+                            <td>Rabu</td>
+                            <td>Pemrograman Dasar</td>
+                            <td>07.00 - 09.30</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <span class="tolltip3">ini project 3</span>
+        </div>
+
+    </div>
 
 
 </body>
