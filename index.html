@@ -6,7 +6,8 @@
     <style>
         body {
             font-family: "Rubik", sans-serif;
-            background: #e9e9e9;
+            background: linear-gradient(330deg, #000,#757373);
+            background-attachment: fixed;
         }
 
         /*Sidebar*/
@@ -14,36 +15,35 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 10px;
+            margin-top: 30px;
         }
 
-        ul {
+        nav ul {
             background: #ffffff;
-            padding: 20px 10px;
-            border-radius: 30px;
+            border-radius: 80px;
+            width: 1000px;
+            height: 150px;
+            display: flex;
+            align-items: center;
         }
 
         li {
             list-style: none;
             display: inline;
-            background: #ffffff;
-            margin: 30px;
         }
 
 
         a {
             text-decoration: none;
             color: #5b5b5b;
-            font-size: 20px;
-            background-color: #ffffff;
-            padding: 10px 20px;
+            font-size: 40px;
+            padding: 25px 80px;
         }
 
         a:focus {
             background: linear-gradient(330deg, #000, #565656);
             color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 50px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
             transition: color 0.3s ease;
         }
@@ -52,23 +52,27 @@
             background: linear-gradient(320deg, #dedddd, #ffffff);
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
             color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 50px;
             border: 1px solid #e1e1e1;
             transition: color 0.3s ease;
             color: #000;
         }
 
 
-        .content {}
+        .content {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-125%);
+            top: 300px;
+        }
 
 
         /*card1*/
         .card {
             background: #ffffff;
-            width: 320px;
-            height: 440px;
-            border-radius: 30px;
+            width: 620px;
+            height: 880px;
+            border-radius: 60px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.5s ease;
         }
@@ -82,14 +86,14 @@
         }
 
         .pp {
-            width: 80px;
+            width: 160px;
             border-radius: 100px;
         }
 
         .profil {
             padding: 5px;
             background: rgb(253, 253, 253);
-            width: 80px;
+            width: 160px;
             border-radius: 100px;
             display: flex;
             justify-content: center;
@@ -100,8 +104,8 @@
         }
 
         video {
-            width: 300px;
-            border-radius: 25px;
+            width: 600px;
+            border-radius: 50px;
         }
 
         .bg-profil {
@@ -109,47 +113,47 @@
         }
 
         .name {
-            font-size: 28px;
+            font-size: 50px;
             position: absolute;
-            margin-top: -42px;
-            margin-left: 120px;
+            margin-top: -120px;
+            margin-left: 230px;
         }
 
-        .card p {
-            line-height: 43px;
-            margin-top: -30px;
-            margin-left: 35px;
+        .keterangan {
+            font-size: 25px;
+            margin-top: 150px;
+            margin-left: 70px;
         }
 
         button {
-            width: 280px;
-            height: 50px;
-            font-size: 25px;
+            width: 560px;
+            height: 100px;
+            font-size: 50px;
             border: none;
-            border-radius: 25px;
+            border-radius: 40px;
             background: linear-gradient(320deg, #000, #6e6e6e);
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
             color: #ffffff;
             transition: all 0.1s ease;
-            margin-top: 50px;
+            margin-top: 130px;
         }
 
         button:hover {
-            width: 290px;
-            height: 60px;
-            font-size: 30px;
-            border-radius: 25px;
+            width: 580px;
+            height: 120px;
+            font-size: 55px;
+            border-radius: 50px;
             transform: scale(1.01) translateY(-4px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
         }
 
         button:active {
-            width: 280px;
-            height: 50px;
-            font-size: 25px;
+            width: 560px;
+            height: 100px;
+            font-size: 50px;
             border: none;
-            border-radius: 25px;
+            border-radius: 50px;
             background: linear-gradient(320deg, #000, #4b4b4b);
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
             color: #ffffff;
@@ -165,8 +169,8 @@
         /*hal1*/
         .project2 {
             position: absolute;
-            margin-top: -430px;
-            margin-left: 350px;
+            margin-top: -880px;
+            margin-left: 700px;
             transition: all 0.5s ease;
         }
 
@@ -178,18 +182,20 @@
         .card1 {
             background: #f9f9f9;
             color: #ffffff;
-            width: 400px;
-            height: 190px;
-            border-radius: 20px;
+            width: 800px;
+            height: 390px;
+            border-radius: 50px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
             font-family: Arial;
-            padding: 10px;
+            padding: 20px;
             background: none;
-            margin-right: 240px;
+            margin-right: 200px;
             margin-top: -1px;
+            font-size: 50px;
+            margin-left: 15px;
         }
 
         li {
@@ -202,26 +208,29 @@
             margin-left: 20px;
             background: none;
             margin-top: 20px;
+            font-size: 60px;
         }
 
         .satu {
             color: green;
+            font-size: 40px;
         }
 
         .dua {
             color: red;
+            font-size: 40px;
         }
 
         p {
             background: none;
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
-        .top-card li {
+        .rgb li {
             display: inline;
-            font-size: 10px;
-            margin: -20px;
-            padding: 1px;
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 10px;
         }
 
         .top-card ul {
@@ -232,41 +241,42 @@
         .top-card {
             display: flex;
             background: linear-gradient(320deg, #000, #484848);
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            height: 50px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            height: 100px;
         }
 
         .red {
             background: red;
             color: red;
-            border-radius: 30px;
+            border-radius: 50px;
         }
 
         .yellow {
             background: yellow;
             color: yellow;
-            border-radius: 30px;
+            border-radius: 50px;
 
         }
 
         .green {
             background: green;
             color: green;
-            border-radius: 30px;
+            border-radius: 50px;
         }
 
         .rgb {
             position: absolute;
-            margin-top: -1px;
-            margin-left: 370px;
+            margin-left: 600px;
+            margin-top: 25px;
         }
+
 
         /*hal2*/
         .project3 {
             position: absolute;
-            margin-left: 350px;
-            margin-top: -220px;
+            margin-left: 700px;
+            margin-top: -440px;
             transition: all 0.5s ease;
         }
 
@@ -277,20 +287,20 @@
         .card2 {
             background: #f9f9f9;
             color: #ffffff;
-            width: 400px;
-            height: 220px;
-            border-radius: 20px;
+            width: 800px;
+            height: 440px;
+            border-radius: 50px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
 
         .card2 h2 {
             position: absolute;
-            width: 200px;
+            width: 500px;
         }
 
         table {
             border-collapse: collapse;
-            font-size: 12px;
+            font-size: 29px;
         }
 
         th {
@@ -314,7 +324,7 @@
         .isi {
             display: flex;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 70px;
             background: none;
         }
 
@@ -324,14 +334,14 @@
             display: none;
             background: linear-gradient(320deg, #000, #7d7a7a);
             color: #fff;
-            padding: 10px 20px;
-            font-size: 20px;
+            padding: 20px 40px;
+            font-size: 40px;
             border-radius: 20px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             position: absolute;
-            margin-top: -270px;
-            margin-left: 350px;
-            width: 105px;
+            margin-top: -530px;
+            margin-left: 700px;
+            width: 205px;
             transition: all 1s ease;
         }
 
@@ -347,15 +357,16 @@
             display: none;
             background: linear-gradient(320deg, #000, #7d7a7a);
             color: #fff;
-            padding: 10px 20px;
-            font-size: 20px;
+            padding: 20px 40px;
+            font-size: 40px;
             border-radius: 20px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             position: absolute;
-            margin-top: -510px;
-            margin-left: 180px;
-            width: 105px;
+            margin-top: -1000px;
+            margin-left: 500px;
+            width: 205px;
             transition: all 1s ease;
+            z-index: 100;
         }
 
 
@@ -367,14 +378,14 @@
             display: none;
             background: linear-gradient(320deg, #000, #7d7a7a);
             color: #fff;
-            padding: 10px 20px;
-            font-size: 20px;
+            padding: 20px 40px;
+            font-size: 40px;
             border-radius: 20px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             position: absolute;
-            margin-top: -240px;
-            margin-left: 350px;
-            width: 105px;
+            margin-top: -480px;
+            margin-left: 700px;
+            width: 205px;
             transition: all 1s ease;
         }
     </style>
@@ -407,8 +418,10 @@
 
                 <div class="id">
                     <h4 class="name">Indrawan</h4>
-                    <p>SMK INOVASI MANDIRI</p>
-                    <p>IX RPL 2</p>
+                    <div class="keterangan">
+                        <p>SMK INOVASI MANDIRI</p>
+                        <p>IX RPL 2</p>
+                    </div>
                 </div>
                 <div class="tombol">
                     <button onclick="alert('Nomor Tidak Dapat Dihubungi')">Call Me</button>
